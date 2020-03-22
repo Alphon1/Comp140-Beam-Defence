@@ -10,22 +10,22 @@ public class Block_Controller : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            transform.position = new Vector2(0, -0.6f);
+            transform.position = new Vector2(0, -1f);
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            transform.position = new Vector2(0.6f, 0);
+            transform.position = new Vector2(1f, 0);
             transform.rotation = Quaternion.Euler(0, 0, 90);
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            transform.position = new Vector2(0, 0.6f);
+            transform.position = new Vector2(0, 1f);
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            transform.position = new Vector2(-0.6f, 0);
+            transform.position = new Vector2(-1f, 0);
             transform.rotation = Quaternion.Euler(0, 0, 90);
         }
     }
