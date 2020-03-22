@@ -39,7 +39,16 @@ public class Event_Management : MonoBehaviour
         }
         
     }
-
+    public void Restart()
+    {
+        Attack_Speed = 1.5f;
+        Game_Over = false;
+        Life = 5;
+        Score = 0;
+        Life_Display.text = "Life: " + Life.ToString();
+        Score_Display.text = "Score: " + Score.ToString();
+        StartCoroutine(Send_Beams());
+    }
     private void Initialise_Beam()
     {
         New_Beam_Position = Random.Range(0, 4);
