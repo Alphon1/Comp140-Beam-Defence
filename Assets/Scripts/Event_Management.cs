@@ -29,7 +29,7 @@ public class Event_Management : MonoBehaviour
     {
         Initialise_Beam();
         yield return new WaitForSeconds(Attack_Speed);
-        if (Attack_Speed > 0.5f)
+        if (Attack_Speed > 0.75f)
         {
             Attack_Speed -= 0.025f;
         }
