@@ -41,6 +41,11 @@ public class Event_Management : MonoBehaviour
     }
     public void Restart()
     {
+        StopAllCoroutines();
+        foreach(GameObject i in GameObject.FindGameObjectsWithTag("Beam"))
+        {
+            Destroy(i);
+        }
         Attack_Speed = 1.5f;
         Game_Over = false;
         Life = 5;

@@ -7,6 +7,7 @@ TagManager:
   - Blocker
   - Heart
   - Event
+  - Beam
   layers:
   - Default
   - TransparentFX
